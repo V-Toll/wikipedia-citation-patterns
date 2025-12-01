@@ -7,7 +7,7 @@
 	  "name": "[[Der Spiegel (online)|Der Spiegel]]",
 	  "selectors": {
 		"title": "h1, .headline, [data-area=\"headline\"], .leading-tight, .font-bold.text-xl, .text-4xl",
-		"author": ".font-sansUI, a[href*=\"/impressum/autor-\"], [data-testid=\"author-info\"] a",
+		"author": "div.lg\\:w-8\\/12 .font-sansUI, .font-sansUI:not([class*='button']):not([class*='btn']), a[href*=\"/impressum/autor-\"]",
 		"date": "time, .date, [data-area=\"date\"], [data-testid=\"publish-date\"] time, .text-s"
 	  },
 	  "authorProcessing": "spiegel",
