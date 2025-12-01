@@ -480,7 +480,6 @@
 		"author": "[data-testid='author-name-with-optional-link'] a[rel='author'], [data-testid='author-name-with-optional-link'] span[rel='author']",
 		"date": "time, .timestamp"
 	  }
-	}
 	},
 	"theguardian.com": {
 	  "name": "[[The Guardian]]",
