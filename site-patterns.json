@@ -1,17 +1,31 @@
 {
-	"version": "2.0.3",
-	"lastUpdated": "2025-12-01T16:10:00Z",
-	"description": "Complete pattern database for Wikipedia Citation Generator with 200+ websites and comprehensive Spiegel.de author abbreviations",
-	"patterns": {
-	  "spiegel.de": {
-		"name": "[[Der Spiegel (online)|Der Spiegel]]",
-		"selectors": {
-		  "title": "h1, .headline, [data-area=\"headline\"], .leading-tight, .font-bold.text-xl, .text-4xl",
-		  "author": ".font-sansUI",
-		  "date": "time, .date, [data-area=\"date\"], [data-testid=\"publish-date\"] time, .text-s"
-		},
-		"authorProcessing": "spiegel",
-		"authorAbbreviations": {
+  "version": "2.0.4",
+  "lastUpdated": "2025-12-01T16:18:00Z",
+  "description": "Fixed Spiegel.de author selector to target article byline specifically",
+  "patterns": {
+	"spiegel.de": {
+	  "name": "[[Der Spiegel (online)|Der Spiegel]]",
+	  "selectors": {
+		"title": "h1, .headline, [data-area=\"headline\"], .leading-tight, .font-bold.text-xl, .text-4xl",
+		"author": ".font-sansUI.mt-8, div[class*='lg:w-8/12'] .font-sansUI, article .font-sansUI.text-shade-darker",
+		"date": "time, .date, [data-area=\"date\"], [data-testid=\"publish-date\"] time, .text-s"
+	  },
+	  "authorProcessing": "spiegel",
+	  "authorAbbreviations": {
+		"hba": "Henrik Bahlmann",
+		"aeh": "Anna Ehlebracht",
+		"mgo": "Malte Göbel",
+		"mkh": "Miriam Khan",
+		"czl": "Charlotte Lüder",
+		"jml": "Jonas Mielke",
+		"jpe": "Jan Petter",
+		"ptz": "Florian Pütz",
+		"svs": "Sven Scharf",
+		"esw": "Elisa Schwarze",
+		"kim": "Kim Staudt",
+		"sol": "Sebastian Stoll",
+		"atr": "Anastasia Trenkler",
+		"naw": "Nadine Wolter",
 		"dk": "Dirk Kurbjuweit",
 		"tdo": "Thorsten Dörting",
 		"com": "Cordula Meyer",
@@ -49,20 +63,6 @@
 		"kuz": "Stefan Kuzmany",
 		"jat": "Janko Tietz",
 		"ulz": "Benjamin Schulz",
-		"hba": "Henrik Bahlmann",
-		"aeh": "Anna Ehlebracht",
-		"mgo": "Malte Göbel",
-		"mkh": "Miriam Khan",
-		"czl": "Charlotte Lüder",
-		"jml": "Jonas Mielke",
-		"jpe": "Jan Petter",
-		"ptz": "Florian Pütz",
-		"svs": "Sven Scharf",
-		"esw": "Elisa Schwarze",
-		"kim": "Kim Staudt",
-		"sol": "Sebastian Stoll",
-		"atr": "Anastasia Trenkler",
-		"naw": "Nadine Wolter",
 		"hic": "Christoph Hickmann",
 		"ron": "Roland Nelles",
 		"fie": "Maria Fiedler",
