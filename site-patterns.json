@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-01T13:00:00Z",
+  "description": "Pattern database for Wikipedia Citation Generator",
+  "patterns": {
+	"spiegel.de": {
+	  "name": "[[Der Spiegel (online)|Der Spiegel]]",
+	  "selectors": {
+		"title": "h1, .headline, [data-area=\"headline\"], .leading-tight, .font-bold.text-xl, .text-4xl",
+		"author": "a[href*=\"/impressum/autor-\"], a[title]:not([title*=\"springen\"]):not([title*=\"Menü\"]):not([title*=\"Navigation\"]) .font-bold, [data-testid=\"author-info\"] a, .byline a",
+		"date": "time, .date, [data-area=\"date\"], [data-testid=\"publish-date\"] time, .text-s"
+	  },
+	  "authorProcessing": "spiegel"
+	},
+	"transfermarkt.de": {
+	  "name": "[[transfermarkt.de]]",
+	  "selectors": {
+		"title": "h1, .data-header__headline-wrapper h1, .news-headline h1",
+		"author": ".news-author, .author-info, .data-header__content .author, [class*=\"author\"]",
+		"date": ".news-date, .date-published, .news-header .date, [class*=\"date\"]:not([class*=\"update\"])"
+	  },
+	  "authorProcessing": "transfermarkt"
+	},
+	"bild.de": {
+	  "name": "[[Bild (Zeitung)|Bild]]",
+	  "selectors": {
+		"title": "h1, .txt-headline",
+		"author": ".author, .byline",
+		"date": "time, .date"
+	  }
+	},
+	"zeit.de": {
+	  "name": "[[Die Zeit]]",
+	  "selectors": {
+		"title": "h1, .zon-teaser-standard__title",
+		"author": ".metadata__source, .byline",
+		"date": "time, .metadata__date"
+	  }
+	},
+	"bbc.com": {
+	  "name": "[[BBC]]",
+	  "selectors": {
+		"title": "h1, .story-body__h1",
+		"author": ".byline, .mini-info-list__item",
+		"date": "time, .date"
+	  }
+	},
+	"nytimes.com": {
+	  "name": "[[The New York Times]]",
+	  "selectors": {
+		"title": "h1, [data-testid=\"headline\"]",
+		"author": ".byline-author, [data-testid=\"byline\"]",
+		"date": "time, .timestamp"
+	  }
+	},
+	"theguardian.com": {
+	  "name": "[[The Guardian]]",
+	  "selectors": {
+		"title": "h1, .content__headline",
+		"author": ".byline, .contributor-byline",
+		"date": "time, .content__dateline-wpd"
+	  }
+	}
+  }
+}
