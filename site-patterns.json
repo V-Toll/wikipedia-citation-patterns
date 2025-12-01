@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
-  "lastUpdated": "2025-12-01T13:00:00Z",
-  "description": "Pattern database for Wikipedia Citation Generator",
+  "version": "2.0.0",
+  "lastUpdated": "2025-12-01T13:30:00Z",
+  "description": "Complete pattern database for Wikipedia Citation Generator with 200+ websites",
   "patterns": {
 	"spiegel.de": {
 	  "name": "[[Der Spiegel (online)|Der Spiegel]]",
@@ -37,19 +37,120 @@
 		"date": "time, .metadata__date"
 	  }
 	},
-	"bbc.com": {
-	  "name": "[[BBC]]",
+	"faz.net": {
+	  "name": "[[Frankfurter Allgemeine Zeitung]]",
 	  "selectors": {
-		"title": "h1, .story-body__h1",
-		"author": ".byline, .mini-info-list__item",
-		"date": "time, .date"
+		"title": "h1, .atc-HeadlineText",
+		"author": ".atc-MetaAuthor, .byline",
+		"date": "time, .atc-MetaTime"
 	  }
+	},
+	"sueddeutsche.de": {
+	  "name": "[[Süddeutsche Zeitung]]",
+	  "selectors": {
+		"title": "h1, .sz-headline",
+		"author": ".author, .byline",
+		"date": "time, .timeformat"
+	  }
+	},
+	"tagesschau.de": {
+	  "name": "[[Tagesschau.de]]",
+	  "selectors": {
+		"title": "h1, .meldungskopf__headline",
+		"author": ".authorline, .byline",
+		"date": ".meta__time, .stand"
+	  }
+	},
+	"kicker.de": {
+	  "name": "[[Kicker (Sportmagazin)|kicker.de|kicker]]",
+	  "selectors": {
+		"title": "h1, .kick__article-headline",
+		"author": ".kick__author, .author",
+		"date": "time, .kick__publish-date"
+	  }
+	},
+	"welt.de": {
+	  "name": "[[Die Welt]]"
+	},
+	"focus.de": {
+	  "name": "[[Focus]]"
+	},
+	"stern.de": {
+	  "name": "[[Stern (Zeitschrift)|Stern]]"
+	},
+	"handelsblatt.com": {
+	  "name": "[[Handelsblatt]]"
+	},
+	"wiwo.de": {
+	  "name": "[[Wirtschaftswoche]]"
+	},
+	"manager-magazin.de": {
+	  "name": "[[Manager Magazin]]"
+	},
+	"dw.com": {
+	  "name": "[[Deutsche Welle]]"
+	},
+	"deutschlandfunk.de": {
+	  "name": "[[Deutschlandfunk]]"
+	},
+	"ard.de": {
+	  "name": "[[ARD]]"
+	},
+	"zdf.de": {
+	  "name": "[[ZDF]]"
+	},
+	"rtl.de": {
+	  "name": "[[RTL Television|RTL]]"
+	},
+	"sat1.de": {
+	  "name": "[[Sat.1]]"
+	},
+	"pro7.de": {
+	  "name": "[[ProSieben]]"
+	},
+	"n-tv.de": {
+	  "name": "[[n-tv]]"
+	},
+	"sport1.de": {
+	  "name": "[[Sport1]]"
+	},
+	"sportschau.de": {
+	  "name": "[[Sportschau]]"
+	},
+	"auto-motor-und-sport.de": {
+	  "name": "[[Auto Motor und Sport]]"
+	},
+	"computer-bild.de": {
+	  "name": "[[Computer Bild]]"
+	},
+	"chip.de": {
+	  "name": "[[Chip (Zeitschrift)|Chip]]"
+	},
+	"heise.de": {
+	  "name": "[[Heise online]]"
+	},
+	"t-online.de": {
+	  "name": "[[T-Online]]"
+	},
+	"web.de": {
+	  "name": "[[WEB.DE]]"
+	},
+	"gmx.de": {
+	  "name": "[[GMX]]"
 	},
 	"nytimes.com": {
 	  "name": "[[The New York Times]]",
 	  "selectors": {
 		"title": "h1, [data-testid=\"headline\"]",
 		"author": ".byline-author, [data-testid=\"byline\"]",
+		"date": "time, .timestamp"
+	  }
+	},
+	"washingtonpost.com": {
+	  "name": "[[The Washington Post]]",
+	  "selectors": {
+		"title": "h1, .headline",
+		"author": ".author, .byline",
 		"date": "time, .timestamp"
 	  }
 	},
@@ -60,6 +161,546 @@
 		"author": ".byline, .contributor-byline",
 		"date": "time, .content__dateline-wpd"
 	  }
+	},
+	"bbc.com": {
+	  "name": "[[BBC]]",
+	  "selectors": {
+		"title": "h1, .story-body__h1",
+		"author": ".byline, .mini-info-list__item",
+		"date": "time, .date"
+	  }
+	},
+	"reuters.com": {
+	  "name": "[[Reuters]]",
+	  "selectors": {
+		"title": "h1, .ArticleHeader__headline",
+		"author": ".Attribution__container, .byline",
+		"date": "time, .ArticleHeader__date"
+	  }
+	},
+	"cnn.com": {
+	  "name": "[[CNN]]",
+	  "selectors": {
+		"title": "h1, .headline__text",
+		"author": ".byline__name, .metadata__byline",
+		"date": ".timestamp, .update-time"
+	  }
+	},
+	"wsj.com": {
+	  "name": "[[The Wall Street Journal]]"
+	},
+	"usatoday.com": {
+	  "name": "[[USA Today]]"
+	},
+	"foxnews.com": {
+	  "name": "[[Fox News]]"
+	},
+	"cbsnews.com": {
+	  "name": "[[CBS News]]"
+	},
+	"nbcnews.com": {
+	  "name": "[[NBC News]]"
+	},
+	"abcnews.go.com": {
+	  "name": "[[ABC News]]"
+	},
+	"bloomberg.com": {
+	  "name": "[[Bloomberg]]"
+	},
+	"forbes.com": {
+	  "name": "[[Forbes]]"
+	},
+	"time.com": {
+	  "name": "[[Time]]"
+	},
+	"newsweek.com": {
+	  "name": "[[Newsweek]]"
+	},
+	"economist.com": {
+	  "name": "[[The Economist]]"
+	},
+	"newyorker.com": {
+	  "name": "[[The New Yorker]]"
+	},
+	"theatlantic.com": {
+	  "name": "[[The Atlantic]]"
+	},
+	"politico.com": {
+	  "name": "[[Politico]]"
+	},
+	"huffpost.com": {
+	  "name": "[[HuffPost]]"
+	},
+	"buzzfeed.com": {
+	  "name": "[[BuzzFeed]]"
+	},
+	"vox.com": {
+	  "name": "[[Vox (Website)|Vox]]"
+	},
+	"slate.com": {
+	  "name": "[[Slate (Magazin)|Slate]]"
+	},
+	"salon.com": {
+	  "name": "[[Salon.com]]"
+	},
+	"dailymail.co.uk": {
+	  "name": "[[Daily Mail]]"
+	},
+	"independent.co.uk": {
+	  "name": "[[The Independent]]"
+	},
+	"telegraph.co.uk": {
+	  "name": "[[The Daily Telegraph|The Telegraph]]"
+	},
+	"mirror.co.uk": {
+	  "name": "[[The Mirror]]"
+	},
+	"express.co.uk": {
+	  "name": "[[Daily Express]]"
+	},
+	"thesun.co.uk": {
+	  "name": "[[The Sun]]"
+	},
+	"metro.co.uk": {
+	  "name": "[[Metro (britische Zeitung)|Metro]]"
+	},
+	"arstechnica.com": {
+	  "name": "[[Ars Technica]]"
+	},
+	"techcrunch.com": {
+	  "name": "[[TechCrunch]]"
+	},
+	"wired.com": {
+	  "name": "[[Wired]]"
+	},
+	"engadget.com": {
+	  "name": "[[Engadget]]"
+	},
+	"theverge.com": {
+	  "name": "[[The Verge]]"
+	},
+	"gizmodo.com": {
+	  "name": "[[Gizmodo]]"
+	},
+	"cnet.com": {
+	  "name": "[[CNET]]"
+	},
+	"zdnet.com": {
+	  "name": "[[ZDNet]]"
+	},
+	"anandtech.com": {
+	  "name": "[[AnandTech]]"
+	},
+	"tomshardware.com": {
+	  "name": "[[Tom's Hardware]]"
+	},
+	"pcmag.com": {
+	  "name": "[[PC Magazine]]"
+	},
+	"pcworld.com": {
+	  "name": "[[PCWorld]]"
+	},
+	"macworld.com": {
+	  "name": "[[Macworld]]"
+	},
+	"nature.com": {
+	  "name": "[[Nature]]"
+	},
+	"newscientist.com": {
+	  "name": "[[New Scientist]]"
+	},
+	"sciencedaily.com": {
+	  "name": "[[ScienceDaily]]"
+	},
+	"scientificamerican.com": {
+	  "name": "[[Scientific American]]"
+	},
+	"popsci.com": {
+	  "name": "[[Popular Science]]"
+	},
+	"livescience.com": {
+	  "name": "[[Live Science]]"
+	},
+	"space.com": {
+	  "name": "[[Space.com]]"
+	},
+	"ft.com": {
+	  "name": "[[Financial Times]]"
+	},
+	"marketwatch.com": {
+	  "name": "[[MarketWatch]]"
+	},
+	"fool.com": {
+	  "name": "[[The Motley Fool]]"
+	},
+	"money.com": {
+	  "name": "[[Money (Zeitschrift)|Money]]"
+	},
+	"fortune.com": {
+	  "name": "[[Fortune (Zeitschrift)|Fortune]]"
+	},
+	"fastcompany.com": {
+	  "name": "[[Fast Company (Zeitschrift)|Fast Company]]"
+	},
+	"inc.com": {
+	  "name": "[[Inc. (Zeitschrift)|Inc.]]"
+	},
+	"entrepreneur.com": {
+	  "name": "[[Entrepreneur (Zeitschrift)|Entrepreneur]]"
+	},
+	"businessinsider.com": {
+	  "name": "[[Business Insider]]"
+	},
+	"cnbc.com": {
+	  "name": "[[CNBC]]"
+	},
+	"espn.com": {
+	  "name": "[[ESPN]]"
+	},
+	"si.com": {
+	  "name": "[[Sports Illustrated]]"
+	},
+	"bleacherreport.com": {
+	  "name": "[[Bleacher Report]]"
+	},
+	"cbssports.com": {
+	  "name": "[[CBS Sports]]"
+	},
+	"nbcsports.com": {
+	  "name": "[[NBC Sports]]"
+	},
+	"foxsports.com": {
+	  "name": "[[Fox Sports]]"
+	},
+	"sbnation.com": {
+	  "name": "[[SB Nation]]"
+	},
+	"deadspin.com": {
+	  "name": "[[Deadspin]]"
+	},
+	"theathletic.com": {
+	  "name": "[[The Athletic]]"
+	},
+	"goal.com": {
+	  "name": "[[Goal.com]]"
+	},
+	"fourfourtwo.com": {
+	  "name": "[[FourFourTwo]]"
+	},
+	"skysports.com": {
+	  "name": "[[Sky Sports]]"
+	},
+	"variety.com": {
+	  "name": "[[Variety (Magazin)|Variety]]"
+	},
+	"hollywoodreporter.com": {
+	  "name": "[[The Hollywood Reporter]]"
+	},
+	"deadline.com": {
+	  "name": "[[Deadline Hollywood]]"
+	},
+	"ew.com": {
+	  "name": "[[Entertainment Weekly]]"
+	},
+	"people.com": {
+	  "name": "[[People (Zeitschrift)|People]]"
+	},
+	"tmz.com": {
+	  "name": "[[TMZ]]"
+	},
+	"eonline.com": {
+	  "name": "[[E! Entertainment Television|E!]]"
+	},
+	"extratv.com": {
+	  "name": "[[Extra (US-Fernsehsendung)|Extra]]"
+	},
+	"accesshollywood.com": {
+	  "name": "[[Access Hollywood]]"
+	},
+	"rollingstone.com": {
+	  "name": "[[Rolling Stone]]"
+	},
+	"billboard.com": {
+	  "name": "[[Billboard (Magazin)|Billboard]]"
+	},
+	"pitchfork.com": {
+	  "name": "[[Pitchfork Media|Pitchfork]]"
+	},
+	"spin.com": {
+	  "name": "[[Spin (Magazin)|Spin]]"
+	},
+	"lemonde.fr": {
+	  "name": "[[Le Monde]]"
+	},
+	"lefigaro.fr": {
+	  "name": "[[Le Figaro]]"
+	},
+	"liberation.fr": {
+	  "name": "[[Libération]]"
+	},
+	"leparisien.fr": {
+	  "name": "[[Le Parisien]]"
+	},
+	"lexpress.fr": {
+	  "name": "[[L'Express]]"
+	},
+	"lepoint.fr": {
+	  "name": "[[Le Point]]"
+	},
+	"lesechos.fr": {
+	  "name": "[[Les Échos]]"
+	},
+	"france24.com": {
+	  "name": "[[France 24]]"
+	},
+	"franceinfo.fr": {
+	  "name": "[[Franceinfo]]"
+	},
+	"rfi.fr": {
+	  "name": "[[Radio France Internationale|RFI]]"
+	},
+	"tv5monde.com": {
+	  "name": "[[TV5 Monde]]"
+	},
+	"elpais.com": {
+	  "name": "[[El País]]"
+	},
+	"elmundo.es": {
+	  "name": "[[El Mundo (Spanien)|El Mundo]]"
+	},
+	"abc.es": {
+	  "name": "[[ABC (Zeitung, Madrid)|ABC]]"
+	},
+	"lavanguardia.com": {
+	  "name": "[[La Vanguardia]]"
+	},
+	"elperiodico.com": {
+	  "name": "[[El Periódico de Catalunya]]"
+	},
+	"larazon.es": {
+	  "name": "[[La Razón (Spanien)|La Razón]]"
+	},
+	"elconfidencial.com": {
+	  "name": "[[El Confidencial]]"
+	},
+	"eldiario.es": {
+	  "name": "[[elDiario.es]]"
+	},
+	"publico.es": {
+	  "name": "[[Público (Spanien)|Público]]"
+	},
+	"20minutos.es": {
+	  "name": "[[20 Minutos]]"
+	},
+	"rtve.es": {
+	  "name": "[[RTVE]]"
+	},
+	"marca.com": {
+	  "name": "[[Marca (Zeitung)|Marca]]"
+	},
+	"as.com": {
+	  "name": "[[AS (Zeitung)|AS]]"
+	},
+	"sport.es": {
+	  "name": "[[Sport (spanische Zeitung)|Sport]]"
+	},
+	"mundodeportivo.com": {
+	  "name": "[[Mundo Deportivo]]"
+	},
+	"repubblica.it": {
+	  "name": "[[la Repubblica]]"
+	},
+	"corriere.it": {
+	  "name": "[[Corriere della Sera]]"
+	},
+	"lastampa.it": {
+	  "name": "[[La Stampa]]"
+	},
+	"ilgiornale.it": {
+	  "name": "[[Il Giornale]]"
+	},
+	"ilmessaggero.it": {
+	  "name": "[[Il Messaggero]]"
+	},
+	"ilpost.it": {
+	  "name": "[[Il Post]]"
+	},
+	"ilsole24ore.com": {
+	  "name": "[[Il Sole 24 Ore]]"
+	},
+	"ansa.it": {
+	  "name": "[[ANSA]]"
+	},
+	"agi.it": {
+	  "name": "[[Agenzia Giornalistica Italia|AGI]]"
+	},
+	"adnkronos.com": {
+	  "name": "[[Adnkronos]]"
+	},
+	"rainews.it": {
+	  "name": "[[Rai News 24|Rai News]]"
+	},
+	"gazzetta.it": {
+	  "name": "[[La Gazzetta dello Sport]]"
+	},
+	"corrieredellosport.it": {
+	  "name": "[[Corriere dello Sport]]"
+	},
+	"tuttosport.com": {
+	  "name": "[[Tuttosport]]"
+	},
+	"calciomercato.com": {
+	  "name": "[[Calciomercato.com]]"
+	},
+	"nos.nl": {
+	  "name": "[[Nederlandse Omroep Stichting|NOS]]"
+	},
+	"nu.nl": {
+	  "name": "[[NU.nl]]"
+	},
+	"telegraaf.nl": {
+	  "name": "[[De Telegraaf]]"
+	},
+	"volkskrant.nl": {
+	  "name": "[[de Volkskrant]]"
+	},
+	"nrc.nl": {
+	  "name": "[[NRC Handelsblad|NRC]]"
+	},
+	"trouw.nl": {
+	  "name": "[[Trouw]]"
+	},
+	"parool.nl": {
+	  "name": "[[Het Parool]]"
+	},
+	"ad.nl": {
+	  "name": "[[Algemeen Dagblad]]"
+	},
+	"fd.nl": {
+	  "name": "[[Het Financieele Dagblad]]"
+	},
+	"rtl.nl": {
+	  "name": "[[RTL Nederland|RTL]]"
+	},
+	"dutchnews.nl": {
+	  "name": "[[DutchNews.nl]]"
+	},
+	"nltimes.nl": {
+	  "name": "[[NL Times]]"
+	},
+	"aftonbladet.se": {
+	  "name": "[[Aftonbladet]]"
+	},
+	"dn.se": {
+	  "name": "[[Dagens Nyheter]]"
+	},
+	"svd.se": {
+	  "name": "[[Svenska Dagbladet]]"
+	},
+	"expressen.se": {
+	  "name": "[[Expressen]]"
+	},
+	"vg.no": {
+	  "name": "[[Verdens Gang]]"
+	},
+	"dagbladet.no": {
+	  "name": "[[Dagbladet]]"
+	},
+	"aftenposten.no": {
+	  "name": "[[Aftenposten]]"
+	},
+	"berlingske.dk": {
+	  "name": "[[Berlingske]]"
+	},
+	"politiken.dk": {
+	  "name": "[[Politiken]]"
+	},
+	"bt.dk": {
+	  "name": "[[BT (dänische Zeitung)|BT]]"
+	},
+	"ap.org": {
+	  "name": "[[Associated Press]]"
+	},
+	"apnews.com": {
+	  "name": "[[Associated Press]]"
+	},
+	"afp.com": {
+	  "name": "[[Agence France-Presse]]"
+	},
+	"upi.com": {
+	  "name": "[[United Press International]]"
+	},
+	"tass.com": {
+	  "name": "[[TASS]]"
+	},
+	"xinhuanet.com": {
+	  "name": "[[Xinhua]]"
+	},
+	"un.org": {
+	  "name": "[[Vereinte Nationen]]"
+	},
+	"who.int": {
+	  "name": "[[Weltgesundheitsorganisation]]"
+	},
+	"worldbank.org": {
+	  "name": "[[Weltbank]]"
+	},
+	"imf.org": {
+	  "name": "[[Internationaler Währungsfonds]]"
+	},
+	"oecd.org": {
+	  "name": "[[OECD]]"
+	},
+	"europa.eu": {
+	  "name": "[[Europäische Union]]"
+	},
+	"gov.uk": {
+	  "name": "[[Regierung des Vereinigten Königreichs]]"
+	},
+	"whitehouse.gov": {
+	  "name": "[[Weißes Haus]]"
+	},
+	"cdc.gov": {
+	  "name": "[[Centers for Disease Control and Prevention]]"
+	},
+	"fda.gov": {
+	  "name": "[[Food and Drug Administration]]"
+	},
+	"nasa.gov": {
+	  "name": "[[NASA]]"
+	},
+	"nist.gov": {
+	  "name": "[[National Institute of Standards and Technology]]"
+	},
+	"jstor.org": {
+	  "name": "[[JSTOR]]"
+	},
+	"cambridge.org": {
+	  "name": "[[Cambridge University Press]]"
+	},
+	"oxforddictionaries.com": {
+	  "name": "[[Oxford English Dictionary|Oxford Dictionaries]]"
+	},
+	"britannica.com": {
+	  "name": "[[Encyclopædia Britannica]]"
+	},
+	"archive.org": {
+	  "name": "[[Internet Archive]]"
+	},
+	"worldcat.org": {
+	  "name": "[[WorldCat]]"
+	},
+	"pubmed.ncbi.nlm.nih.gov": {
+	  "name": "[[PubMed]]"
+	},
+	"ncbi.nlm.nih.gov": {
+	  "name": "[[National Center for Biotechnology Information]]"
+	},
+	"sciencedirect.com": {
+	  "name": "[[ScienceDirect]]"
+	},
+	"nobelprize.org": {
+	  "name": "[[Nobelpreis|nobelprize.org]]"
 	}
   }
 }
