@@ -485,7 +485,7 @@
 	  "name": "[[The Guardian]]",
 	  "selectors": {
 		"title": "h1, .content__headline",
-		"author": ".byline, .contributor-byline",
+		"author": "a[rel=\"author\"], .byline, .contributor-byline",
 		"date": "time, .content__dateline-wpd"
 	  }
 	},
