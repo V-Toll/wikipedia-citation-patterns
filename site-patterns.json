@@ -1,7 +1,7 @@
 {
-  "version": "2.0.7",
-  "lastUpdated": "2026-07-01T23:09:00Z",
-  "description": "Fixed Washington Post author detection for multiple authors",
+  "version": "2.0.8",
+  "lastUpdated": "2026-07-01T23:22:00Z",
+  "description": "Pattern database for the Wikipedia Citation Generator (Userscript)",
   "patterns": {
 	"spiegel.de": {
 	  "name": "[[Der Spiegel (online)|Der Spiegel]]",
@@ -577,7 +577,12 @@
 	  "name": "[[The Independent]]"
 	},
 	"telegraph.co.uk": {
-	  "name": "[[The Daily Telegraph|The Telegraph]]"
+	  "name": "[[The Daily Telegraph|The Telegraph]]",
+	  "selectors": {
+		"title": "h1",
+		"author": "a[rel=\"author\"]",
+		"date": "time"
+	  }
 	},
 	"mirror.co.uk": {
 	  "name": "[[The Mirror]]"
