@@ -6,6 +6,12 @@ separate** changelog inside the script (click the version badge in the modal).
 
 Only ever add new entries at the top — never remove old ones.
 
+## v2.0.9 – 2026-07-02
+- Der Spiegel (`spiegel.de`): author is now read from the byline (author-profile
+  link or the abbreviation byline) instead of the footer, so magazine brand
+  names like "DEIN SPIEGEL", "SPIEGEL BESTSELLER" etc. no longer appear as the
+  author. Those brand names were also added to the filter list as a safety net.
+
 ## v2.0.8 – 2026-07-01
 - The Telegraph (`telegraph.co.uk`): added author/title/date selectors
   (`a[rel="author"]`, `h1`, `time`) so author and date are extracted correctly.

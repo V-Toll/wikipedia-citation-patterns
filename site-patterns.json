@@ -1,13 +1,13 @@
 {
-  "version": "2.0.8",
-  "lastUpdated": "2026-07-01T23:22:00Z",
+  "version": "2.0.9",
+  "lastUpdated": "2026-07-02T00:00:00Z",
   "description": "Pattern database for the Wikipedia Citation Generator (Userscript)",
   "patterns": {
 	"spiegel.de": {
 	  "name": "[[Der Spiegel (online)|Der Spiegel]]",
 	  "selectors": {
 		"title": "h1, .headline, [data-area=\"headline\"], .leading-tight, .font-bold.text-xl, .text-4xl",
-		"author": ".font-sansUI.mt-8, div[class*='lg:w-8/12'] .font-sansUI, article .font-sansUI.text-shade-darker",
+		"author": "header a[href*='/impressum/autor'], article a[href*='/impressum/autor'], .text-shade-darker.mt-8, .font-sansUI.mt-8, div[class*='lg:w-8/12'] .font-sansUI, article .font-sansUI.text-shade-darker",
 		"date": "time, .date, [data-area=\"date\"], [data-testid=\"publish-date\"] time, .text-s"
 	  },
 	  "authorProcessing": "spiegel",
@@ -337,7 +337,7 @@
 		"oel": "Angela Ölscher"
 	  },
 	  "filterAgencies": ["dpa", "sid", "afp", "reuters", "ap", "rtr"],
-	  "filterNames": ["DER SPIEGEL", "SPIEGEL"]
+	  "filterNames": ["DER SPIEGEL", "SPIEGEL", "DEIN SPIEGEL", "SPIEGEL BESTSELLER", "SPIEGEL GESCHICHTE", "Effilee", "SPIEGEL SPEZIAL", "SPIEGEL WISSEN", "S-Magazin", "SPIEGEL COACHING", "SPIEGEL CHRONIK"]
 	},
 	"transfermarkt.de": {
 	  "name": "[[transfermarkt.de]]",
